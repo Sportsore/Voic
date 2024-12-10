@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Synthesizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Voice Synthesizer</h1>
+        <p>تم تطوير الموقع بواسطة صوفي <strong>telegram:@caser7</strong></p>
+        <div class="voice-list">
+            <h2>اختر صوتاً:</h2>
+            <select id="voiceSelect"></select>
+        </div>
+        <div class="text-input">
+            <h2>أدخل النص:</h2>
+            <textarea id="textInput" rows="5" placeholder="اكتب النص هنا..."></textarea>
+        </div>
+        <button id="convertBtn">تحويل النص إلى صوت</button>
+        <div class="output">
+            <h2>الصوت الناتج:</h2>
+            <audio id="audioPlayer" controls></audio>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
